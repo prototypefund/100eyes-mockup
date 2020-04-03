@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>100eyes - Schritt 2</title>
+        <link rel="stylesheet" href="./main.css" />
+    </head>
+
+    <body>
+
+        <header>
+            <span>100eyes</span>
+        </header>
+
+        <main class="narrow">
+
+            <h1>
+                <svg><use xlink:href="./icons.svg#nc-icon-pin-search-glyph-48"/></svg>
+                <br>
+                Finde Orte in der Nähe
+            </h1>
+
+            <p>Gib deine Frage in der Textbox ein. Beachte dabei die folgenden Tipps, um möglichst viele qualifizierte Antworten zu erhalten:</p>
+
+            <ul>
+                <li>
+                    <svg><use xlink:href="./icons.svg#nc-icon-f-check-glyph-48"/></svg>
+                    Wähle einfache, kurze Formulierungen.
+                </li>
+                <li>
+                    <svg><use xlink:href="./icons.svg#nc-icon-f-check-glyph-48"/></svg>
+                    Beschreibe genau, welche Orte du suchst.
+                </li>
+                <li>
+                    <svg><use xlink:href="./icons.svg#nc-icon-f-check-glyph-48"/></svg>
+                    Beschreibe genau, welche Informationen du über die Orte benötigst.
+                </li>
+            </ul>
+
+            <p><strong>Beispiel:</strong> <em>Wo stehen Sie auf dem Weg zur Arbeit momentan regelmäßig im Stau? Bitte geben Sie auf jeden Fall den Straßennamen an. Falls Sie nicht im Stadtgebiet wohnen, geben Sie bitte auch den Ortsnamen an.</em></p>
+
+            <form action="./schritt-3-orte.html" method="get">
+                <textarea
+                    id="question"
+                    name="question"
+                    placeholder="Gib hier deine Frage ein…"
+                ></textarea>
+                <input type="submit" id="submit" name="submit" value="Jetzt an 50 Personen senden" />
+            </form>
+
+        </main>
+
+        <script src="./main.js"></script>
+        <script src="./quicklink.js"></script>
+
+    </body>
+
+</html>
