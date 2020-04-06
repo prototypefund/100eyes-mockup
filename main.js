@@ -21,7 +21,9 @@ const svg = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
 if(form && submit) {
     form.addEventListener('submit', () => {
         submit.disabled = true;
-        submit.value = 'Sende Frage…';
+        submit.innerHTML = svg;
+    });
+}
 
 /* Persist question */
 const params = new URLSearchParams(location.search);
