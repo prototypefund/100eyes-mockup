@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>100eyes - Schritt 2</title>
+        <title>100eyes - Schritt 3</title>
         <link rel="stylesheet" href="./main.css" />
     </head>
 
@@ -17,30 +17,22 @@
             <h1>
                 <svg><use xlink:href="./icons.svg#nc-icon-pin-search-glyph-48"/></svg>
                 <br>
-                Wir haben deine Frage an 50 Menschen gesendet.
+                Wer ist für diese Recherche zuständig?
             </h1>
 
-            <p>Bisher haben <strong>2 von 50 Menschen</strong> geantwortet. Neue Fragen erscheinen hier automatisch.</p>
+            <p>Menschen helfen dir immer dann gerne bei der Recherche, wenn Sie das Gefühl haben, mit einem echten Menschen zu kommunizieren.</p>
 
-            <div class="replies">
-                <div class="reply">
-                    <h3>Deine Frage:</h3>
-                    <p>Wo stehen Sie auf dem Weg zur Arbeit momentan regelmäßig im Stau? Bitte geben Sie auf jeden Fall den Straßennamen an. Falls Sie nicht im Stadtgebiet wohnen, geben Sie bitte auch den Ortsnamen an.</p>
-                </div>
+            <p>Sofern du hier den Namen der zuständigen Redakteurin eingibst, senden wir die Frage in ihrem Namen.</p>
 
-                <div class="reply">
-                    <h3>Marco, 42 Jahre:</h3>
-                    <p>Kreuzung Schießgrabenstraße/Dahlenburger</p>
-                </div>
-
-                <div class="reply">
-                    <h3>Renate, 72 Jahre:</h3>
-                    <p>ich bin im Ruhestand, fahre nicht mehr arbeiten</p>
-                </div>
-            </div>
+            <form action="./schritt-4-orte.html" method="get">
+                <input type="text" id="name" name="name" placeholder="Gib den Namen ein…" />
+                <input type="hidden" id="question" name="question" />
+                <button type="submit" id="submit" name="submit">Jetzt an 50 Personen senden</button>
+            </form>
 
         </main>
 
+        <script src="./pubnub.js"></script>
         <script src="./main.js"></script>
         <script src="./quicklink.js"></script>
 
