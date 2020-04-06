@@ -142,7 +142,7 @@ form {
     padding: 1.25rem 0;
 }
 
-textarea, input {
+textarea, input, button {
     display: block;
     width: 100%;
     margin-bottom: .75rem;
@@ -150,6 +150,7 @@ textarea, input {
 
     font-family: inherit;
     font-size: inherit;
+    line-height: 1.5rem;
     color: inherit;
     border-radius: 4px;
     border: 1.5px solid #ccc;
@@ -159,7 +160,7 @@ textarea {
     resize: none;
 }
 
-input[type="submit"] {
+button {
     background-color: #444;
     color: #fff;
     -webkit-font-smoothing: antialiased;
@@ -168,12 +169,24 @@ input[type="submit"] {
     border: none;
 }
 
-input[type="submit"]:hover {
+button:hover:not(:disabled) {
     background-color: #000;
 }
 
-input[type="submit"]:disabled {
+button:disabled {
     opacity: .65;
+}
+
+@keyframes rotating {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+button > svg {
+    display: block;
+    height: 1.5rem;
+    margin: auto;
+    animation: rotating .5s infinite linear;
 }
 
 .reply {
