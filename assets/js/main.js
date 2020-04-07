@@ -59,6 +59,46 @@
 
 
 /*********************************/
+/*       PERSIST QUESTION        */
+/*********************************/
+(function() {
+    const editorForm = document.querySelector('.editor-form');
+
+    if(!editorForm) {
+        return;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const question = params.get('question');
+
+    // Save the question to a hidden input field to persist
+    // it between page transitions
+    editorForm.question.value = question;
+})();
+
+
+/*********************************/
+/*    SHOW EDITOR + QUESTION     */
+/*********************************/
+(function() {
+    const questionWrapper = document.querySelector('.question');
+
+    if(!questionWrapper) {
+        return;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('editor');
+    const question = params.get('question');
+
+    questionWrapper.innerHTML = `
+        <h3>Frage${ name ? ' von ' + name : '' }:</h3>
+        <p>${ question }</p>
+    `;
+})();
+
+
+/*********************************/
 /*          SHOW REPLIES         */
 /*********************************/
 (function() {

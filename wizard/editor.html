@@ -25,7 +25,8 @@
             <p>Sofern du hier den Namen der zuständigen Redakteurin eingibst, senden wir die Frage in ihrem Namen.</p>
 
             <form class="editor-form" action="/wizard/success.html" method="get">
-                <input type="text" id="name" name="name" placeholder="Gib den Namen ein…" />
+                <input type="text" id="editor" name="editor" placeholder="Gib den Namen ein…" />
+                <input type="hidden" id="question" name="question" />
                 <button type="submit" data-loading-indicator>Jetzt an 50 Personen senden</button>
             </form>
 
