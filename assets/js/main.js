@@ -129,7 +129,7 @@
 
     window.pubnub.addListener({
         message: event => {
-            if(event.channel !== 'reply') {
+            if(event.channel !== 'replies') {
                 return;
             }
 
