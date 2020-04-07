@@ -200,12 +200,11 @@ input[type="radio"] {
     width: auto;
 }
 
-.reply {
-    padding-top: .75rem;
-    padding-bottom: 1.5rem;
+.question {
+    padding-bottom: .75rem;
 }
 
-.reply + .reply {
+.reply {
     padding-top: 1.5rem;
     border-top: 1.5px solid #ddd;
 }
