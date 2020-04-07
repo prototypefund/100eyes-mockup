@@ -13,7 +13,7 @@
 
     // Redirect to setup page if missing or invalid
     if(!(window.publishValid && window.subscribeValid && window.uuidValid)) {
-        window.location = '/setup.html';
+        window.location = '/setup';
     }
 })();
 
