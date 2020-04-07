@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>100eyes - Orte</title>
+        <link rel="stylesheet" href="/assets/css/main.css" />
+    </head>
+
+    <body>
+
+        <header>
+            <span>100eyes</span>
+        </header>
+
+        <main class="narrow">
+
+            <h1>
+                <svg><use xlink:href="/assets/images/icons.svg#nc-icon-pin-search-glyph-48"/></svg>
+                <br>
+                Finde Orte in der Nähe
+            </h1>
+
+            <p>Gib deine Frage in der Textbox ein. Beachte dabei die folgenden Tipps, um möglichst viele qualifizierte Antworten zu erhalten:</p>
+
+            <ul>
+                <li>
+                    <svg><use xlink:href="/assets/images/icons.svg#nc-icon-f-check-glyph-48"/></svg>
+                    Wähle einfache, kurze Formulierungen.
+                </li>
+                <li>
+                    <svg><use xlink:href="/assets/images/icons.svg#nc-icon-f-check-glyph-48"/></svg>
+                    Beschreibe genau, welche Orte du suchst.
+                </li>
+                <li>
+                    <svg><use xlink:href="/assets/images/icons.svg#nc-icon-f-check-glyph-48"/></svg>
+                    Beschreibe genau, welche Informationen du über die Orte benötigst.
+                </li>
+                <li>
+                    <svg><use xlink:href="/assets/images/icons.svg#nc-icon-f-check-glyph-48"/></svg>
+                    Mache klar, falls es eine Deadline für Antworten gibt.
+                </li>
+                <li>
+                    <svg><use xlink:href="/assets/images/icons.svg#nc-icon-f-check-glyph-48"/></svg>
+                    Du kannst Emoji verwenden, um deine Nachricht zu strukturieren.
+                </li>
+
+            </ul>
+
+            <h3>Beispiel:</h3>
+            <p>🚙 Wo stehen Sie auf dem Weg zur Arbeit momentan regelmäßig im Stau?</p>
+            <p>🛣 Bitte geben Sie auf jeden Fall den Straßennamen an. Falls Sie nicht im Stadtgebiet wohnen, geben Sie bitte auch den Ortsnamen an.</p>
+            <p>🕒 Damit wir Ihre Antwort in unserer Recherche berücksichtigen können, antworten Sie bitte nach Möglichkeit bis morgen, 15 Uhr.</p>
+
+            <form class="question-form" action="/wizard/editor.html" method="get">
+                <textarea
+                    id="question"
+                    name="question"
+                    placeholder="Gib hier deine Frage ein…"
+                ></textarea>
+                <button type="submit" data-loading-indicator>Weiter</button>
+            </form>
+
+        </main>
+
+        <script src="/assets/vendor/pubnub.js"></script>
+        <script src="/assets/vendor/quicklink.js"></script>
+        <script src="/assets/js/misc.js"></script>
+        <script src="/assets/js/main.js"></script>
+
+    </body>
+
+</html>

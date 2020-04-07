@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>100eyes - Setup</title>
+        <link rel="stylesheet" href="/assets/css/main.css" />
+    </head>
+
+    <body>
+
+        <header>
+            <span>100eyes</span>
+        </header>
+
+        <main class="narrow">
+
+            <h1>Test-Setup</h1>
+            <p>Bevor wir mit dem Test anfangen, musst du hier noch zwei Passwörter eingeben, die du im Vorfeld von Astrid bekommen haben solltest.</p>
+            <p>Diese Passwörter brauchen wir ausschließlich, um den Test mit dir durchführen zu können. Sie sind nicht Bestandteil der Software, die wir entwickeln.</p>
+
+            <form class="setup-form">
+                <input type="text" required id="uuid" name="uuid" placeholder="Dein Vorname" />
+                <input type="text" required id="publishKey" name="publishKey" placeholder="Publish Passwort" />
+                <input type="text" required id="subscribeKey" name="subscribeKey" placeholder="Subscribe Passwort" />
+                <button type="submit" id="submit" name="submit">Setup abschließen</button>
+            </form>
+
+        </main>
+
+        <script src="/assets/vendor/pubnub.js"></script>
+        <script src="/assets/vendor/quicklink.js"></script>
+        <script src="/assets/js/misc.js"></script>
+        <script src="/assets/js/setup.js"></script>
+
+    </body>
+
+</html>

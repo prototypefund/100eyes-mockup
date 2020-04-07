@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>100eyes - Cockpit</title>
+        <link rel="stylesheet" href="/assets/css/main.css" />
+    </head>
+
+    <body>
+
+        <div class="cockpit">
+            <div class="cockpit-admin">
+                <h3>Verbindungsstatus:</h3>
+                <p class="cockpit-connection">Es hat sich noch niemand verbunden.</p>
+
+                <h3>Frage:</h3>
+                <p class="cockpit-question"></p>
+
+                <h3>Antwort senden:</h3>
+                <form class="cockpit-publish-form">
+                    <input type="text" id="from" name="from" placeholder="Name" />
+                    <label><input type="radio" name="via" value="E-Mail" checked /> E-Mail</label>
+                    <label><input type="radio" name="via" value="Telegram" /> Telegram</label>
+                    <textarea id="text" name="text" placeholder="Nachricht"></textarea>
+                    <button type="submit" data-label="Nachricht senden">Nachricht senden</button>
+                </form>
+            </div>
+
+            <div class="cockpit-preview">
+                <h3>Das sieht die Testperson:</h3>
+                <p class="status"></p>
+                <div class="replies"></div>
+            </div>
+        </div>
+
+        <script src="/assets/vendor/pubnub.js"></script>
+        <script src="/assets/vendor/quicklink.js"></script>
+        <script src="/assets/js/misc.js"></script>
+        <script src="/assets/js/main.js"></script>
+
+    </body>
+
+</html>
