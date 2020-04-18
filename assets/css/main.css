@@ -43,6 +43,7 @@ h1 > svg {
 h3 {
     font-size: 1rem;
     font-weight: 700;
+    margin-bottom: .75rem;
 }
 
 a {
@@ -91,6 +92,10 @@ ul > li > svg {
     vertical-align: top;
     border-radius: 50%;
     background-color: #ededed;
+}
+
+.collapsible-content {
+    display: none;
 }
 
 .tiles {
@@ -181,6 +186,16 @@ button:hover:not(:disabled) {
 
 button:disabled {
     opacity: .65;
+}
+
+.button-link,
+.button-link:hover:not(:disabled) {
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent;
+    border-color: transparent;
+    color: inherit;
 }
 
 @keyframes rotating {

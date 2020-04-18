@@ -78,6 +78,19 @@
 
 
 /*********************************/
+/*         SHOW EXAMPLE          */
+/*********************************/
+(function() {
+    const control = document.querySelector('.collapsible-control');
+    const content = document.querySelector('.collapsible-content');
+
+    control.addEventListener('click', () => {
+        control.style.display = 'none';
+        content.style.display = 'block';
+    });
+})();
+
+/*********************************/
 /*    SHOW EDITOR + QUESTION     */
 /*********************************/
 (function() {
