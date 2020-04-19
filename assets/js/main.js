@@ -81,12 +81,19 @@
 /*         SHOW EXAMPLE          */
 /*********************************/
 (function() {
+    const collapsible = document.querySelector('.collapsible');
     const control = document.querySelector('.collapsible-control');
     const content = document.querySelector('.collapsible-content');
 
     control.addEventListener('click', () => {
-        control.style.display = 'none';
-        content.style.display = 'block';
+        const isOpen = collapsible.classList.contains('collapsible-open');
+
+        if(isOpen) {
+            collapsible.classList.remove('collapsible-open');
+            return;
+        }
+
+        collapsible.classList.add('collapsible-open');
     });
 })();
 

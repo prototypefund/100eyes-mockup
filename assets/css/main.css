@@ -94,8 +94,60 @@ ul > li > svg {
     background-color: #ededed;
 }
 
+.collapsible-open {
+    padding: 0 1rem .25rem;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+
 .collapsible-content {
     display: none;
+}
+
+.collapsible-open > .collapsible-content {
+    display: block;
+}
+
+.collapsible-control {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent!important;
+    color: inherit!important;
+    text-align: left;
+}
+
+.collapsible-open > .collapsible-control {
+    width: calc(100% + 2rem);
+    margin: 0 -1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: rgba(0, 0, 0, .1)!important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.collapsible-control::after {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    content: '▶';
+    font-size: .75rem;
+    margin-left: .5rem;
+}
+
+.collapsible-control::before {
+    content: 'Beispiel anzeigen';
+}
+
+.collapsible-open > .collapsible-control::after {
+    transform: rotate(90deg) translate(.35rem, .25rem);
+    margin-left: .25rem;
+}
+
+.collapsible-open > .collapsible-control::before {
+    content: 'Beispiel ausblenden';
 }
 
 .tiles {
@@ -186,16 +238,6 @@ button:hover:not(:disabled) {
 
 button:disabled {
     opacity: .65;
-}
-
-.button-link,
-.button-link:hover:not(:disabled) {
-    width: auto;
-    padding-left: 0;
-    padding-right: 0;
-    background: transparent;
-    border-color: transparent;
-    color: inherit;
 }
 
 @keyframes rotating {
