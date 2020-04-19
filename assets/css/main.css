@@ -270,6 +270,10 @@ input[type="radio"] {
     margin: 0;
 }
 
+.reply > p > img {
+    max-width: 100%;
+}
+
 .cockpit {
     display: flex;
     width: 100%;
