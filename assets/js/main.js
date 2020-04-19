@@ -85,6 +85,10 @@
     const control = document.querySelector('.collapsible-control');
     const content = document.querySelector('.collapsible-content');
 
+    if(!collapsible || !control || !content) {
+        return;
+    }
+
     control.addEventListener('click', () => {
         const isOpen = collapsible.classList.contains('collapsible-open');
 
