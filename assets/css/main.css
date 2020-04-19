@@ -138,7 +138,7 @@ ul > li > svg {
 }
 
 .collapsible-control::before {
-    content: 'Beispiel anzeigen';
+    content: 'Beispiel einblenden';
 }
 
 .collapsible-open > .collapsible-control::after {
