@@ -258,7 +258,7 @@
             return;
         }
 
-        questionWrapper.innerHTML = question;
+        questionWrapper.innerHTML = '<p>' + question.split(/\n+/).join('</p><p>') + '</p>';
     };
 
     renderQuestion();
