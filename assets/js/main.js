@@ -117,7 +117,7 @@
 
     questionWrapper.innerHTML = `
         <h3>Frage${ name ? ' von ' + name : '' }:</h3>
-        <p>${ question }</p>
+        <p>${ question.split(/\n+/).join('</p><p>') }</p>
     `;
 })();
 
